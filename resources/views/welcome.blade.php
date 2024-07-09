@@ -2,7 +2,7 @@
 
 @section('content')
 <header id="banner" class="flex flex-col justify-between" data-enllax-ratio=".5">
-    <div class="container mx-auto flex items-center justify-between px-48 py-12">
+    <div class="container mx-auto flex items-center justify-center md:justify-start px-4 md:px-48 py-12">
         <!--Logo-->
         <div id="logo">
 
@@ -10,22 +10,18 @@
             <img src="images/logo.png" id="banner-logo" alt="Landing Page"/>
             <!--End of Banner Logo-->
 
-            <!--The Logo that is shown on the sticky Navigation Bar-->
-            <img src="images/logo-2.png" id="navigation-logo" alt="Landing Page"/>
-            <!--End of Navigation Logo-->
-
         </div>
         <!--End of Logo-->
     </div>
     <!--Banner Content-->
-    <div id="banner-content" class="container mx-auto px-48 py-16 flex gap-4">
+    <div id="banner-content" class="flex flex-wrap container mx-auto px-12 md:px-48 py-16">
 
         <!-- texte de presentation -->
-        <div class="w-1/2">
+        <div class="w-full md:w-1/2">
 
             <div class="section-heading">
-                <h1>Enjoy a unique experience</h1>
-                <h2>Welcome to the Hôtel Carlton in Cannes,
+                <h1 class="text-2xl md:text-3xl">Enjoy a unique experience</h1>
+                <h2 class="hidden md:block">Welcome to the Hôtel Carlton in Cannes,
                     a symbol of elegance and refinement on the famous Croisette.
                     This legendary establishment, the jewel of the Côte d'Azur,
                     offers a sumptuous setting where luxury and tradition
@@ -37,14 +33,14 @@
 
             <!--Call to Action-->
             <a href="https://www.michaelzingraf.com" class="">
-                <img class="w-1/6" src="{{ asset('images/logo-mzre.jpg') }}" alt="logo Michaël Zingraf Real Estate">
+                <img class="w-1/6 hidden md:block" src="{{ asset('images/logo-mzre.jpg') }}" alt="logo Michaël Zingraf Real Estate">
             </a>
             <!--End Call to Action-->
 
         </div>
 
         <!-- formulaire de réservation -->
-        <div class="w-1/2 h-fit bg-white/90 rounded-md">
+        <div class="w-full md:w-1/2 h-fit bg-white/90 rounded-md">
             <form action="{{ route('booking.request') }}" class="p-4 text-center" method="post">
                 @csrf
                 <h3 class="font-bold text-sky-800 uppercase">Book a dream stay in Cannes' most emblematic hotel</h3>
@@ -109,12 +105,12 @@
     <!--Introduction-->
     <section id="about" class="introduction container mx-auto py-12">
 
-        <div class="flex gap-4 px-32">
+        <div class="flex flex-wrap px-4 md:px-32">
 
-            <div class="w-1/3">
+            <div class="w-full md:w-1/3">
                 <div class="section-heading">
                     <h3 class="uppercase">Carlton Cannes</h3>
-                    <h2 class="section-title text-sky-800">Enjoy your dream holiday</h2>
+                    <h2 class="section-title text-sky-800 text-2xl md:text-3xl">Enjoy your dream holiday</h2>
                     <p class="section-subtitle">
                         Discover the Carlton in Cannes, a remarkable hotel that embodies glamour and elegance.
                         Enjoy exceptional hotel services and splendid flats, for a unique experience that combines
@@ -123,10 +119,10 @@
                 </div>
             </div>
 
-            <div class="w-2/3 flex flex-wrap justify-center items-center">
+            <div class="w-full md:w-2/3 flex flex-wrap justify-center items-start md:items-center gap-4 md:gap-0">
 
                 <!--Icon Block-->
-                <div class="basis-1/2 icon-block icon-top wow fadeInUp p-8" data-wow-delay="0.1s">
+                <div class="w-full md:w-1/2 icon-block icon-top wow fadeInUp p-0 md:p-8" data-wow-delay="0.1s">
                     <div class="icon-block-description">
                         <h4 class="text-sky-800 uppercase">High-quality flats</h4>
                         <p class="text-justify">Ranging from 2 to 5 rooms. Each flat is designed to ensure
@@ -137,7 +133,7 @@
                 <!--End of Icon Block-->
 
                 <!--Icon Block-->
-                <div class="basis-1/2 icon-block icon-top wow fadeInUp p-8" data-wow-delay="0.3s">
+                <div class="w-full md:w-1/2 icon-block icon-top wow fadeInUp p-0 md:p-8" data-wow-delay="0.3s">
                     <div class="icon-block-description">
                         <h4 class="text-sky-800 uppercase">Garden and Pool</h4>
                         <p>Take advantage of the hotel's magnificent garden and indoor swimming pool to relax and unwind.</p>
@@ -146,7 +142,7 @@
                 <!--End of Icon Block-->
 
                 <!--Icon Block-->
-                <div class="basis-1/2 icon-block icon-top wow fadeInUp p-8" data-wow-delay="0.5s">
+                <div class="w-full md:w-1/2 icon-block icon-top wow fadeInUp p-0 md:p-8" data-wow-delay="0.5s">
                     <div class="icon-block-description">
                         <h4 class="text-sky-800 uppercase">A secure environment</h4>
                         <p>Benefit from the hotel's optimum security for total peace of mind during your stay.</p>
@@ -155,7 +151,7 @@
                 <!--End of Icon Block-->
 
                 <!--Icon Block-->
-                <div class="basis-1/2 icon-block icon-top wow fadeInUp p-8" data-wow-delay="0.5s">
+                <div class="w-full md:w-1/2 icon-block icon-top wow fadeInUp p-0 md:p-8" data-wow-delay="0.5s">
                     <div class="icon-block-description">
                         <h4 class="text-sky-800 uppercase">Luxury hotels in Cannes</h4>
                         <p>benefit from a top-of-the-range hotel offer, including catering and all hotel services.</p>
@@ -173,24 +169,24 @@
 
 
     <!--Gallery-->
-    <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery data-featherlight-filter="a">
+    <aside id="gallery" class="container mx-auto flex flex-wrap scrollto clearfix" data-featherlight-gallery data-featherlight-filter="a">
 
-        <a href="/image/gallery-images/gallery-image-1.jpg" data-featherlight="image" class="col-3 wow fadeIn" data-wow-delay="0.1s">
+        <a href="/image/gallery-images/gallery-image-1.jpg" data-featherlight="image" class="w-full md:w-1/3 wow fadeIn" data-wow-delay="0.1s">
             <img src="images/gallery-images/gallery-image-1.jpg" alt="Landing Page"/>
         </a>
-        <a href="images/gallery-images/gallery-image-2.jpg" data-featherlight="image" class="col-3 wow fadeIn" data-wow-delay="0.3s">
+        <a href="images/gallery-images/gallery-image-2.jpg" data-featherlight="image" class="w-full md:w-1/3 wow fadeIn" data-wow-delay="0.3s">
             <img src="images/gallery-images/gallery-image-2.jpg" alt="Landing Page"/>
         </a>
-        <a href="images/gallery-images/gallery-image-3.jpg" data-featherlight="image" class="col-3 wow fadeIn" data-wow-delay="0.5s">
+        <a href="images/gallery-images/gallery-image-3.jpg" data-featherlight="image" class="w-full md:w-1/3 wow fadeIn" data-wow-delay="0.5s">
             <img src="images/gallery-images/gallery-image-3.jpg" alt="Landing Page"/>
         </a>
-        <a href="images/gallery-images/gallery-image-4.jpg" data-featherlight="image" class="col-3 wow fadeIn" data-wow-delay="1.1s">
+        <a href="images/gallery-images/gallery-image-4.jpg" data-featherlight="image" class="w-full md:w-1/3 wow fadeIn" data-wow-delay="1.1s">
             <img src="images/gallery-images/gallery-image-4.jpg" alt="Landing Page"/>
         </a>
-        <a href="images/gallery-images/gallery-image-5.jpg" data-featherlight="image" class="col-3 wow fadeIn" data-wow-delay="0.9s">
+        <a href="images/gallery-images/gallery-image-5.jpg" data-featherlight="image" class="w-full md:w-1/3 wow fadeIn" data-wow-delay="0.9s">
             <img src="images/gallery-images/gallery-image-5.jpg" alt="Landing Page"/>
         </a>
-        <a href="images/gallery-images/gallery-image-6.jpg" data-featherlight="image" class="col-3 wow fadeIn" data-wow-delay="0.7s">
+        <a href="images/gallery-images/gallery-image-6.jpg" data-featherlight="image" class="w-full md:w-1/3 wow fadeIn" data-wow-delay="0.7s">
             <img src="images/gallery-images/gallery-image-6.jpg" alt="Landing Page"/>
         </a>
 
@@ -199,16 +195,15 @@
 
 
     <!--Content Section-->
-    <div id="services" class="scrollto clearfix">
+    <div id="services" class="scrollto clearfix py-24 px-2">
 
-        <div class="row no-padding-bottom clearfix">
-
+        <div class="container mx-auto flex flex-wrap no-padding-bottom clearfix">
 
             <!--Content Left Side-->
-            <div class="col-3">
+            <div class="w-full md:w-1/4">
                 <!--User Testimonial-->
-                <blockquote class="testimonial text-right bigtest">
-                    <q class="uppercase text-gray-400">
+                <blockquote class="testimonial text-center md:text-right bigtest">
+                    <q class="uppercase text-gray-400 text-center md:text-left">
                         Carlton Cannes<br>
                         A Place where History is endlessly being written
                     </q>
@@ -219,10 +214,10 @@
             <!--End Content Left Side-->
 
             <!--Content of the Right Side-->
-            <div class="col-3">
+            <div class="w-full md:w-1/3 p-0 md:pl-12">
                 <div class="section-heading">
                     <h3>BOOKING</h3>
-                    <h2 class="section-title text-sky-800">In an outstanding hotel</h2>
+                    <h2 class="section-title text-sky-800 text-2xl md:text-3xl">In an outstanding hotel</h2>
                     <p class="section-subtitle">
                         Since its reopening, the Carlton Cannes has once again become the emblem of glamour and hotel excellence in Cannes,
                         offering an unrivalled luxury experience to visitors from all over the world.
@@ -242,7 +237,7 @@
             </div>
             <!--End Content Right Side-->
 
-            <div class="col-3">
+            <div class="w-full md:w-1/3">
                 <img src="images/carlton-drawing.jpg" alt="Carlton Cannes Entrance"/>
             </div>
 
@@ -253,15 +248,16 @@
     <!--End of Content Section-->
 
 
-    <!--Clients-->
-    <section id="clients" class="scrollto py-12">
-        <div class="container mx-auto w-3/4 flex gap-4">
+    <!--restaurants-->
+    <section id="clients" class="scrollto py-12 px-2">
 
-            <div class="w-1/3">
+        <div class="container mx-auto w-full md:w-3/4 flex flex-wrap">
+
+            <div class="w-full md:w-1/3">
 
                 <div class="section-heading">
                     <h3 class="uppercase">Restaurants & Beach Club</h3>
-                    <h2 class="section-title text-sky-800">Awake your senses</h2>
+                    <h2 class="section-title text-sky-800 text-2xl md:text-3xl">Awake your senses</h2>
                     <p class="section-subtitle">
                         Enjoy three exceptional restaurants: Riviera, Ruya and Beach Club,
                         renowned for their refined cuisine and unique atmosphere.
@@ -270,18 +266,18 @@
 
             </div>
 
-            <div class="w-2/3 flex gap-4">
-                <a href="#">
+            <div class="w-full md:w-2/3 flex flex-wrap">
+                <a href="#" class="w-full md:w-1/3 p-1">
                     <img class="w-full" src="images/company-images/restaurant-riviera.jpg" alt="Restaurant Riviera Carlton Cannes"/>
                     <div class="client-overlay"><span>Riviera</span></div>
                 </a>
 
-                <a href="#">
+                <a href="#" class="w-full md:w-1/3 p-1">
                     <img src="images/company-images/restaurant-ruya.jpg" alt="Restaurant Ruya Carlton Cannes"/>
                     <div class="client-overlay"><span>Ruya</span></div>
                 </a>
 
-                <a href="#">
+                <a href="#" class="w-full md:w-1/3 p-1">
                     <img src="images/company-images/restaurant-plage.jpg" alt="Private Beach Carlton Cannes"/>
                     <div class="client-overlay"><span>Beach Club</span></div>
                 </a>
@@ -298,7 +294,7 @@
 
             <div class="section-heading">
                 <h3>YOUR CHOICE</h3>
-                <h2 class="section-title text-sky-800">Discover the perfect flat for you</h2>
+                <h2 class="section-title text-sky-800 text-2xl md:text-3xl">Discover the perfect flat for you</h2>
             </div>
 
             <div class="w-full mx-auto">

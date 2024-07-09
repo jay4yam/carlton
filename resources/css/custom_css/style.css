@@ -715,9 +715,6 @@ a img:hover {
 /* 3. Fonts */
 /*------------------------------------------------------------------------------------------*/
 
-h1 {
-    padding: 20px 0;
-}
 
 h2 {
     padding: 14px 0;
@@ -860,10 +857,6 @@ h6 {
 .icon-top .icon {
     position: relative;
     display: block;
-}
-
-.icon-top .icon-block-description {
-    padding-top: 25px;
 }
 
 /* --------- 5.2 Parallax Elements ---------- */
@@ -2164,11 +2157,6 @@ blockquote {
     }
 
     /* Footer */
-    #landing-footer #copyright {
-        float: left;
-        width: 50%;
-    }
-
     #landing-footer .social-icons {
         float: right;
         width: 50%;
@@ -2177,10 +2165,6 @@ blockquote {
     /*-----------------Typography-----------------*/
     h1 {
         font-size: 38px;
-    }
-
-    #banner h1 {
-        font-size: 48px;
     }
 
     /* Hide Elements */
@@ -2259,11 +2243,6 @@ blockquote {
     }
 
     /* Footer */
-    #landing-footer #copyright {
-        float: left;
-        width: 50%;
-    }
-
     #landing-footer .social-icons {
         float: right;
         width: 50%;

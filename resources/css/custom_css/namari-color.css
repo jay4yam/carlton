@@ -168,7 +168,6 @@ body {
 
 #banner h1 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size:62px;
     line-height:60px;
     font-weight:800;
     color:#FFF;
@@ -186,7 +185,6 @@ body {
 
 .section-title {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 34px;
     font-weight:700;
     color:#111;
 }

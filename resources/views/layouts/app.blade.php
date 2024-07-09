@@ -47,8 +47,8 @@
 </div>
 <!--Footer-->
 <footer id="landing-footer" class="clearfix">
-    <div class="row clearfix">
-        <p id="copyright" class="col-2">Made with love by
+    <div class="row clearfix h-12">
+        <p id="copyright" class="w-full text-center md:text-left">Made with love by
             <a href="https://www.michaelzingraf.com">Michaël Zingraf Real Estate</a> &
             <a href="https://carltoncannes.com/">Carlton Cannes</a></p>
     </div>
