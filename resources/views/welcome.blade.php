@@ -86,8 +86,8 @@
                     </label>
                     <label for="arrive_date" class="w-full">
                         <p class="text-xs text-left text-gray-400">Arrival date</p>
-                        <input class="w-full p-4 hover:border-2 border-sky-800 @error('arrive_date') border border-red-600 text-red-600 @enderror" type="date" value="{{ date('Y-m-d') }}" min="{{ date('Y-m-d') }}" max="{{ \Carbon\Carbon::now()->addYear() }}" name="arrive_date" id="arrive_date" maxlength="100" placeholder="email *">
-                        @error('arrive_date')
+                        <input class="w-full p-4 hover:border-2 border-sky-800 @error('arrival_date') border border-red-600 text-red-600 @enderror" type="date" value="{{ date('Y-m-d') }}" min="{{ date('Y-m-d') }}" max="{{ \Carbon\Carbon::now()->addYear() }}" name="arrival_date" id="arrival_date" maxlength="100" placeholder="email *">
+                        @error('arrival_date')
                         <div class="text-red-600">{{ $message }}</div>
                         @enderror
                     </label>
