@@ -298,15 +298,14 @@
             </div>
 
             <div class="w-full mx-auto">
-                <div class="flex border-b border-gray-300">
-                    <button
-                        class="w-1/2 py-4 text-center text-sky-800 uppercase bg-gray-100 focus:outline-none hover:bg-sky-800 hover:text-white active:bg-gray-200"
+                <div class="flex flex-wrap border-b border-gray-300">
+                    <button class="w-1/2 md:w-1/4 py-4 text-center text-sky-800 uppercase bg-gray-100 focus:outline-none hover:bg-sky-800 hover:text-white active:bg-gray-200"
                         onclick="openTab(event, 'tab1')">4 Bedrooms</button>
-                    <button class="w-1/2 py-4 text-center text-sky-800 uppercase bg-gray-100 focus:outline-none hover:bg-sky-800 hover:text-white active:bg-gray-200"
+                    <button class="w-1/2 md:w-1/4 py-4 text-center text-sky-800 uppercase bg-gray-100 focus:outline-none hover:bg-sky-800 hover:text-white active:bg-gray-200"
                             onclick="openTab(event, 'tab2')">3 Bedrooms</button>
-                    <button class="w-1/2 py-4 text-center text-sky-800 uppercase bg-gray-100 focus:outline-none hover:bg-sky-800 hover:text-white active:bg-gray-200"
+                    <button class="w-1/2 md:w-1/4 py-4 text-center text-sky-800 uppercase bg-gray-100 focus:outline-none hover:bg-sky-800 hover:text-white active:bg-gray-200"
                             onclick="openTab(event, 'tab3')">2 Bedrooms</button>
-                    <button class="w-1/2 py-4 text-center text-sky-800 uppercase bg-gray-100 focus:outline-none hover:bg-sky-800 hover:text-white active:bg-gray-200"
+                    <button class="w-1/2 md:w-1/4 py-4 text-center text-sky-800 uppercase bg-gray-100 focus:outline-none hover:bg-sky-800 hover:text-white active:bg-gray-200"
                             onclick="openTab(event, 'tab4')">1 Bedroom</button>
                 </div>
                 <div id="tab1" class="tabcontent p-4">
