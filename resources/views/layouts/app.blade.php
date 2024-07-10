@@ -23,16 +23,6 @@
 </head>
 <body>
 
-<!-- Preloader -->
-<div id="preloader">
-    <div id="status" class="la-ball-triangle-path">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
-<!--End of Preloader-->
-
 <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
     <div class="bg-gold top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
     <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
