@@ -90,7 +90,7 @@
                 </div>
                 <button type="submit" class="m-2 bg-sky-800 hover:bg-sky-900 text-white font-bold py-2 px-4 rounded">Booking Request</button>
                 <p class="text-sm text-gray-500 p-2 italic">An exclusive offer from Michaël Zingraf Real Estate</p>
-                <p class="p-2 text-xs text-justify text-gray-400">By submitting this booking request form, you consent to the collection and use of your personal data by our hotel
+                <p class="p-2 text-xs text-justify text-gray-400 hidden md:block">By submitting this booking request form, you consent to the collection and use of your personal data by our hotel
                     in accordance with our privacy policy. Your information will only be used to process your booking and to improve
                     our services. We are committed to protecting your privacy and will not share your data with third parties without
                     your explicit consent. For more details, please see our privacy policy on our website.</p>
