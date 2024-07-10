@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+//test sur la prod pour avoir la bonne uri
 if( env('APP_ENV') === 'production' ) {
     Route::domain('carlton.michaelzingraf.com')->group(function () {
         Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
