@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<header id="banner" class="flex flex-col justify-between" data-enllax-ratio=".5">
+<header id="banner" class="flex flex-col justify-start md:justify-between" data-enllax-ratio=".5">
     <div class="container mx-auto flex items-center justify-center md:justify-start px-4 md:px-48 py-12">
         <!--Logo-->
         <div id="logo">
@@ -14,7 +14,7 @@
         <!--End of Logo-->
     </div>
     <!--Banner Content-->
-    <div id="banner-content" class="flex flex-wrap container mx-auto px-12 md:px-48 py-16">
+    <div id="banner-content" class="flex flex-wrap container mx-auto px-12 md:px-48 py-2 md:py-16">
 
         <!-- texte de presentation -->
         <div class="w-full md:w-1/2">
