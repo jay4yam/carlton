@@ -2,11 +2,7 @@
 @import "custom_css/font-awesome.css";
 @import "custom_css/namari-color.css";
 @import "custom_css/style.css";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-    font-family: 'fontawesome';
-    src:url("../../public/fonts/fontawesome-webfont.ttf");
-}
