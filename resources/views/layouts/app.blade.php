@@ -23,7 +23,7 @@
 </head>
 <body>
 
-<!-- Preloader -->
+<!-- Preloader 2 -->
 <div id="preloader">
     <div id="status" class="la-ball-triangle-path">
         <div></div>
