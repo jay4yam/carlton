@@ -20,7 +20,7 @@
         <div class="w-full md:w-1/2">
 
             <div class="section-heading">
-                <h1 class="text-2xl md:text-3xl">Enjoy a unique experience</h1>
+                <h1 class="text-2xl md:text-3xl text-center md:text-left">Enjoy a unique experience</h1>
                 <h2 class="hidden md:block">Welcome to the Hôtel Carlton in Cannes,
                     a symbol of elegance and refinement on the famous Croisette.
                     This legendary establishment, the jewel of the Côte d'Azur,
