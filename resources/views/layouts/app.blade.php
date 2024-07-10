@@ -56,8 +56,7 @@
 <!--End of Footer-->
 
 <!-- Include JavaScript resources -->
-@vite(['resources/js/app.js', 'resources/js/custom_js/wow.min.js'])
+@vite(['resources/js/app.js'])
 @yield('dedicated_js')
-
 </body>
 </html>

@@ -11,7 +11,6 @@ import './custom_js/featherlight.min.js';
 import './custom_js/site.js';
 import './custom_js/images-loaded.min.js';
 import './custom_js/pushy.min.js';
-import './custom_js/wow.min.js';
 
 import Alpine from 'alpinejs'
 
